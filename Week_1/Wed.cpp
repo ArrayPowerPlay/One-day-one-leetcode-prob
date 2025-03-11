@@ -25,7 +25,7 @@ public:
         if (lenGroup.empty() && check) {
             res = (maxLen >= k) ? len : 0;
             return res;
-        // if first element = last element, we need to sum two lengths of two alternating groups
+        // if first element != last element, we need to sum two lengths of two alternating groups
         } else if (check) {
             lenGroup[0] += maxLen;
         } else {
